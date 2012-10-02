@@ -4,25 +4,25 @@
 # Author: Philipp Klaus, philipp.l.klaus AT web.de
 
 
-#   This file is part of avrnetio.
+#   This file is part of ardu-measure.
 #
-#   avrnetio is free software: you can redistribute it and/or modify
+#   ardu-measure is free software: you can redistribute it and/or modify
 #   it under the terms of the GNU General Public License as published by
 #   the Free Software Foundation, either version 3 of the License, or
 #   (at your option) any later version.
 #
-#   avrnetio is distributed in the hope that it will be useful,
+#   ardu-measure is distributed in the hope that it will be useful,
 #   but WITHOUT ANY WARRANTY; without even the implied warranty of
 #   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 #   GNU General Public License for more details.
 #
 #   You should have received a copy of the GNU General Public License
-#   along with avrnetio.  If not, see <http://www.gnu.org/licenses/>.
+#   along with ardu-measure.  If not, see <http://www.gnu.org/licenses/>.
 
 
 # Some serial code from https://github.com/gregpinero/ArduinoPlot/blob/master/Arduino_Monitor.py
 
-# example how to use the avrnetio class
+# example how to use the ardu-measure class
 
 import serial
 ## for sys.exit(1)
