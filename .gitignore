@@ -1,1 +1,4 @@
 *.pyc
+plot.pdf
+plot.png
+serial-dump.txt
