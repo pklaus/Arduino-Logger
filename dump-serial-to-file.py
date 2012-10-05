@@ -22,7 +22,7 @@
 import serial
 
 DEFAULTS = {
-    'serial_port': "/dev/tty.usbmodemfd121",
+    'serial_port': "/dev/tty.usbserial-FTGACCA2",
     'filename' : "./serial-dump.txt",
     'buffer_mode' : 1, # -1: system default, 0: unbuffered 1: line buffered
 }
@@ -45,7 +45,7 @@ def main():
                 lines = buffer.split('\n') # Guaranteed to have at least 2 entries
                 if lines[-2]:
                     print lines[-2]
-                    logfile.write(lines[-2])
+                    logfile.write(lines[-2]+'\n')
                 buffer = lines[-1]
             else:
                 time.sleep(0.02)
