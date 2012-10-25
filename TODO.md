@@ -1,4 +1,4 @@
-* NTC-logger.py:
+* PythonTools/NTC-logger.py:
   * Convert [optparse][] to [argparse][]
   * Split output into multiple files:
     * simple temperature file
