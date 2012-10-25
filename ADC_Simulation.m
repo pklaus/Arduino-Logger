@@ -1,3 +1,6 @@
+%%% Script for Matlab
+%%% Helps to size the serial reference resistors when using
+%%% an NTC to measure temperatures with an ADC.
 
 % Properties of the NTC:
 B=3625; R0 = 10000; T0 = 25+273;
