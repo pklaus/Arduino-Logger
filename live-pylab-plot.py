@@ -4,7 +4,7 @@ import pylab
 from pylab import *
 import time
 
-f = open('values.txt')
+f = open('serial-dump.txt')
 
 # skip (old) stuff we don't want
 f.seek(-200,2) # go to (almost) the end of the file
