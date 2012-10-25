@@ -1,4 +1,6 @@
 
+%%% Exponential Moving Average Implemented in Matlab
+
 %% EMA simulation based on
 % http://stockcharts.com/school/doku.php?id=chart_school:technical_indicators:moving_averages
 % http://osdir.com/ml/python.matplotlib.general/2005-04/msg00044.html
