@@ -33,6 +33,9 @@
   //configuration values  for EMA Timer Interrupt
   #define NUM_ADC_INPUTS 14
   #define ADC_PINS A2, A3, A4, A5, A6, A7, A8, A9, A10, A11, A12, A13, A14, A15
+#elif defined(__AVR_ATmega168__) || defined(__AVR_ATmega328P__)
+  #define NUM_ADC_INPUTS 4
+  #define ADC_PINS A2, A3, A4, A5
 #endif
 
 #define ECHO_TO_SERIAL   1  // echo data to serial port if nonzero
