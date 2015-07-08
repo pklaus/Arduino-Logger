@@ -3,10 +3,12 @@
 %%% an NTC to measure temperatures with an ADC.
 
 % Properties of the NTC:
-B=3625; R0 = 10000; T0 = 25+273;
+%B=3625; R0 = 10000; T0 = 25+273; % Buerklin NTC thermistor 10K, 3625K, 0.75 mW/K, B57550G1103F005
+B=3977; R0 = 10000; T0 = 25+273;  % Reichelt NTC-0,2 10K
 
 % Properties of the measurement circuit:
-Rref = 500; Uvcc = 4.6; ADCbits = 10;
+Rref = 500; Uvcc = 4.6; ADCbits = 10;   % Arduino / Ausheizlogger
+%Rref = 10000; Uvcc = 5.; ADCbits = 10; % Arduino / Raumtemperatur-Logger
 
 % Map the measurement range of the ADC:
 Um = [0:(Uvcc/(2^ADCbits-1.)):Uvcc];
@@ -14,7 +16,7 @@ Um = [0:(Uvcc/(2^ADCbits-1.)):Uvcc];
 Um = Um(2:end-1);
 
 % Calculate the distinguishable resistance values of the NTC:
-Rt = Rref*(Uvcc ./Um - 1); % by measuring the voltage accross the ref res.
+Rt = Rref*(Uvcc ./Um - 1);      % by measuring the voltage accross the ref res.
 %Rt = Rref ./ (Uvcc ./ Um - 1); % measuring the voltage across the NTC
 
 % Calculate the temperature values belonging to those NTC resistances:
